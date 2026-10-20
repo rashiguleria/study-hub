@@ -1,0 +1,125 @@
+.courses-page {
+  padding-top: 4.2rem;
+}
+
+.courses-heading {
+  margin-bottom: 2.6rem;
+}
+
+.courses-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.course-search {
+  display: flex;
+  width: min(100%, 430px);
+  min-height: 48px;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  color: #888ea1;
+}
+
+.course-search:focus-within {
+  border-color: #aaa7f2;
+  box-shadow: 0 0 0 3px rgba(98, 92, 231, 0.1);
+}
+
+.course-search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+}
+
+.course-search input::placeholder {
+  color: #969bad;
+}
+
+.course-count {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.course-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 1.5rem;
+}
+
+.course-filter {
+  min-height: 38px;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  background: #fff;
+  color: #656d82;
+  font-size: 0.83rem;
+  font-weight: 650;
+  transition: border-color 150ms ease, background 150ms ease, color 150ms ease;
+}
+
+.course-filter:hover {
+  border-color: #c8c6fa;
+  color: var(--brand);
+}
+
+.course-filter--active {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #fff;
+}
+
+.course-filter--active:hover {
+  border-color: var(--brand-dark);
+  background: var(--brand-dark);
+  color: #fff;
+}
+
+.courses-grid {
+  margin-bottom: 2rem;
+}
+
+.courses-empty {
+  padding: 4rem 1rem;
+  border: 1px dashed #d7d9e5;
+  border-radius: 18px;
+  background: #fbfbfe;
+  text-align: center;
+}
+
+.courses-empty h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.courses-empty p {
+  margin: 0.6rem 0 1rem;
+  color: var(--muted);
+}
+
+.courses-empty .text-link {
+  border: 0;
+  background: transparent;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 600px) {
+  .courses-page {
+    padding-top: 3rem;
+  }
+
+  .courses-toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

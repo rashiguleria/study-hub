@@ -1,0 +1,126 @@
+.contact-page {
+  padding-top: 4.2rem;
+}
+
+.contact-heading {
+  margin-bottom: 2.8rem;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  max-width: 930px;
+  gap: 1.1rem;
+  margin: 0 auto;
+}
+
+.contact-aside,
+.contact-form {
+  padding: clamp(1.4rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #fff;
+}
+
+.contact-aside {
+  align-self: start;
+  background: linear-gradient(150deg, #f5f4ff, #fffaf0);
+}
+
+.contact-aside__icon {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-items: center;
+  border-radius: 15px;
+  background: #fff;
+  color: var(--brand);
+  font-size: 1.3rem;
+  box-shadow: 0 7px 20px rgba(36, 49, 84, 0.07);
+}
+
+.contact-aside h2 {
+  margin: 1.4rem 0 0.6rem;
+  font-size: 1.35rem;
+}
+
+.contact-aside > p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.contact-aside__note {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1.7rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e4f3;
+  color: #747b90;
+  font-size: 0.83rem;
+  line-height: 1.55;
+}
+
+.contact-aside__note svg {
+  flex: 0 0 auto;
+  margin-top: 0.2rem;
+  color: var(--brand);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 0 0 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1.1rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #dfe2eb;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #aaa7f2;
+  outline: 3px solid rgba(98, 92, 231, 0.1);
+}
+
+.contact-form .button {
+  align-self: flex-start;
+}
+
+.form-notice {
+  margin: 1rem 0 0;
+  padding: 0.8rem 0.9rem;
+  border-radius: 10px;
+  background: #fff6e7;
+  color: #77581f;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .contact-page {
+    padding-top: 3rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,155 @@
+.student-info-page {
+  padding-top: 3.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.info-card,
+.benefit-card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  box-shadow: 0 14px 40px rgba(32, 37, 65, 0.055);
+}
+
+.info-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(1.1rem, 4vw, 2rem);
+}
+
+.info-card .p-card-body,
+.info-card .p-card-content {
+  padding: 0;
+}
+
+.form-section + .form-section {
+  margin-top: 2rem;
+}
+
+.form-section h2 {
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 1.2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 1.25rem;
+}
+
+.field {
+  min-width: 0;
+  margin-bottom: 1.15rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 680;
+}
+
+.field.full-width {
+  grid-column: 1 / -1;
+}
+
+.student-info-page .p-inputtext,
+.student-info-page .p-dropdown,
+.student-info-page .p-calendar,
+.student-info-page .p-inputnumber,
+.student-info-page .p-multiselect {
+  width: 100%;
+}
+
+.student-info-page .p-inputtext:enabled:focus,
+.student-info-page .p-dropdown:not(.p-disabled).p-focus,
+.student-info-page .p-calendar:not(.p-disabled).p-focus > .p-inputtext,
+.student-info-page .p-inputnumber:not(.p-disabled).p-focus,
+.student-info-page .p-multiselect:not(.p-disabled).p-focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(98, 92, 231, 0.12);
+}
+
+.student-info-page .p-multiselect-token {
+  border-radius: 8px;
+  background: #f0efff;
+  color: var(--brand-dark);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.75rem;
+}
+
+.submit-btn {
+  border: 0 !important;
+  border-radius: 10px !important;
+  background: var(--brand) !important;
+  color: #fff !important;
+}
+
+.submit-btn:hover {
+  background: var(--brand-dark) !important;
+}
+
+.info-footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.info-footer h3 {
+  margin: 0 0 1.25rem;
+  color: var(--ink);
+  font-size: 1.35rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.benefit-card {
+  padding: 1.4rem;
+}
+
+.benefit-card i {
+  color: var(--brand);
+  font-size: 1.65rem;
+}
+
+.benefit-card h4 {
+  margin: 0.8rem 0 0.45rem;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.benefit-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .student-info-page {
+    padding-top: 2.5rem;
+  }
+
+  .form-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-actions {
+    justify-content: stretch;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
